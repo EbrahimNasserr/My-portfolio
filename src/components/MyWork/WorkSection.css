@@ -1,0 +1,144 @@
+.projectOne {
+  position: relative;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.projectOne .content {
+  grid-area: 1 / 12 / 1 / 6;
+  text-align: right;
+  z-index: 40;
+}
+
+@media (max-width: 991px) {
+  .projectOne .content {
+    grid-area: 1 / 13 / 1 / 6;
+    position: relative;
+    top: 70px;
+  }
+  .projectOne .image {
+    position: relative;
+  }
+}
+
+.projectOne .image {
+  box-shadow: 0 30px 25px -10px rgba(0, 0, 0, 0.6);
+  grid-area: 1 / 1 / 1 / 7;
+  z-index: 1;
+}
+
+.projectOne .image img {
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projectTwo {
+  position: relative;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.projectTwo .content {
+  grid-area: 1/1/1/6;
+  text-align: left;
+  z-index: 40;
+}
+
+.projectTwo .image {
+  grid-area: 1 / 12 / 1 / 6;
+  z-index: 1;
+  box-shadow: 0 30px 25px -10px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 991px) {
+  .projectTwo .image {
+    grid-area: 1 / 13 / 1 / 6;
+    position: relative;
+    top: 50px;
+  }
+  .projectTwo .content {
+    grid-area: 1 / 1 / 1 / 7;
+  }
+}
+
+.projectTwo .image img {
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projectThree {
+  position: relative;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.projectThree .content {
+  grid-area: 1/12/1/6;
+  text-align: right;
+  z-index: 40;
+}
+
+.projectThree .image {
+  grid-area: 1 / 1 / 1 / 7;
+  z-index: 1;
+  box-shadow: 0 30px 25px -10px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 991px) {
+  .projectThree .image {
+    grid-area: 1 / 1 / 1 / 9;
+    position: relative;
+    top: 20px;
+  }
+  .projectThree .content {
+    grid-area: 1 / 13 / 1 / 7;
+  }
+}
+
+.projectThree .image img {
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+  .projectTwo .content {
+    grid-area: 1 / 1 / 1 / 12;
+  }
+
+  .projectTwo .image {
+    grid-area: 1 / 13 / 1 / 4;
+    position: relative;
+    top: 70px;
+  }
+
+  .projectThree .content {
+    grid-area: 1 / 13 / 1 /1;
+  }
+
+  .projectThree .image {
+    grid-area: 1 / 1 / 1 / 10;
+    position: relative;
+    top: 100px;
+  }
+  .projectOne .content {
+    grid-area: 1 / 13 / 1 / 1;
+  }
+
+  .projectOne .image {
+    grid-area: 1 / 1 / 1 / 10;
+    position: relative;
+    bottom: 60px;
+  }
+}
