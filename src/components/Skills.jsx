@@ -1,5 +1,5 @@
 import React from "react";
-import TextSphere from "./TextSphere/TextSphere";
+import TextSphere from "./TextSphere/TextSphere.jsx";
 
 const Skills = ({ sections }) => {
   return (
