@@ -1,5 +1,5 @@
 import React from "react";
-import TextSphere from "./TextSphere/TextSphere.jsx";
+// import TextSphere from "./TextSphere/TextSphere.jsx";
 
 const Skills = ({ sections }) => {
   return (
@@ -35,9 +35,9 @@ const Skills = ({ sections }) => {
               bootstrap
             </li>
           </ul>
-          <div className=" basis-3/5 md:hidden">
+          {/* <div className=" basis-3/5 md:hidden">
             <TextSphere />
-          </div>
+          </div> */}
         </div>
       </section>
     </>
