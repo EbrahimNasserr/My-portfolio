@@ -11,7 +11,7 @@ const Skills = ({ sections }) => {
   return (
     <>
       <section
-        className="relative"
+        className="relative overflow-hidden"
         id="skills"
         ref={(el) => (sections.current[2] = el)}
       >
