@@ -34,11 +34,11 @@ function Contact({ sections }) {
             let's do something great !
           </h2>
           <div className="relative w-80 h-96 bg-black rounded flex justify-center items-center box overflow-hidden">
-            <span className=" absolute inset-1 rounded bg-bg-cart-color z-40"></span>
+            <span className=" absolute inset-1 rounded bg-bg-cart-color z-30"></span>
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="flex flex-col relative z-50 p-3 rounded gap-2 w-full h-full"
+              className="flex flex-col relative z-30 p-3 rounded gap-2 w-full h-full"
             >
               <input
                 type="text"

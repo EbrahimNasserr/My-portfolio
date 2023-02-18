@@ -1,44 +1,74 @@
-import React from "react";
-// import TextSphere from "./TextSphere/TextSphere.jsx";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Skills = ({ sections }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <>
-      <section id="skills" ref={(el) => (sections.current[2] = el)}>
+      <section
+        className="relative"
+        id="skills"
+        ref={(el) => (sections.current[2] = el)}
+      >
         <h2 className="main-heading text-4xl sm:after:w-[150px] md:text-3xl sm:text-xl xsm:text-xl">
           skills
         </h2>
-        <div className=" flex items-center justify-between lg:flex-col lg:text-center relative">
-          <ul className=" flex-col basis-1/3 items-start gap-8 justify-start flex lg:w-full lg:justify-center lg:items-center">
-            <li className=" text-xl font-light bg-black w-full rounded-sm p-2 border-l-2 border-solid border-l-primary">
-              html
-            </li>
-            <li className=" text-xl font-light bg-black w-full rounded-sm p-2 border-l-2 border-solid border-l-primary">
-              css
-            </li>
-            <li className=" text-xl font-light bg-black w-full rounded-sm p-2 border-l-2 border-solid border-l-primary">
-              JavaScript
-            </li>
-            <li className=" font-light bg-black w-full rounded-sm text-xl p-2 border-l-2 border-solid border-l-primary">
-              react
-            </li>
-            <li className=" font-light bg-black w-full rounded-sm text-xl p-2 border-l-2 border-solid border-l-primary">
-              redux
-            </li>
-            <li className=" font-light bg-black w-full rounded-sm text-xl p-2 border-l-2 border-solid border-l-primary">
-              redux-Toolkit
-            </li>
-            <li className=" font-light bg-black w-full rounded-sm text-xl p-2 border-l-2 border-solid border-l-primary">
-              TailwindCSS
-            </li>
-            <li className=" font-light bg-black w-full rounded-sm text-xl p-2 border-l-2 border-solid border-l-primary">
-              bootstrap
-            </li>
-          </ul>
-          {/* <div className=" basis-3/5 md:hidden">
-            <TextSphere />
-          </div> */}
-        </div>
+        <ul className=" relative flex-col w-full h-[75rem] justify-between flex">
+          <li
+            data-aos="fade-right"
+            className=" text-xl lg:text-lg md:text-base sm:text-sm absolute font-light md:w-1/2 md:left-0 bg-black w-1/4 left-1/4 rounded-sm p-2 border-l-2 border-solid border-l-primary"
+          >
+            html
+          </li>
+          <li
+            data-aos="fade-left"
+            className=" text-xl lg:text-lg md:text-base sm:text-sm absolute left-1/2 text-end w-1/4 font-light md:w-1/2 bg-black rounded-sm p-2 border-r-2 top-40 border-solid border-r-primary"
+          >
+            css
+          </li>
+          <li
+            data-aos="fade-right"
+            className=" text-xl lg:text-lg md:text-base sm:text-sm absolute font-light md:w-1/2 md:left-0 bg-black w-1/4 left-1/4 top-80 rounded-sm p-2 border-l-2 border-solid border-l-primary"
+          >
+            JavaScript
+          </li>
+          <li
+            data-aos="fade-left"
+            className=" text-xl lg:text-lg md:text-base sm:text-sm absolute left-1/2 text-end w-1/4 font-light md:w-1/2 bg-black rounded-sm p-2 border-r-2 top-[30rem] border-solid border-r-primary"
+          >
+            react
+          </li>
+          <li
+            data-aos="fade-right"
+            className=" text-xl lg:text-lg md:text-base sm:text-sm absolute left-1/4 w-1/4 font-light md:w-1/2 md:left-0 bg-black rounded-sm p-2 border-l-2 top-[40rem] border-solid border-l-primary"
+          >
+            TailwindCSS
+          </li>
+          <li
+            data-aos="fade-left"
+            className=" text-xl lg:text-lg md:text-base sm:text-sm absolute font-light md:w-1/2 text-end bg-black w-1/4 left-1/2 top-[50rem] rounded-sm p-2 border-r-2 border-solid border-r-primary"
+          >
+            redux
+          </li>
+          <li
+            data-aos="fade-right"
+            className=" text-xl lg:text-lg md:text-base sm:text-sm absolute font-light md:w-1/2 md:left-0 bg-black w-1/4 left-1/4 top-[60rem] rounded-sm p-2 border-l-2 border-solid border-l-primary"
+          >
+            redux-Toolkit
+          </li>
+          <li
+            data-aos="fade-left"
+            className=" text-xl lg:text-lg md:text-base sm:text-sm absolute left-1/2 text-end w-1/4 font-light md:w-1/2 bg-black rounded-sm p-2 border-r-2 top-[70rem] border-solid border-r-primary"
+          >
+            bootstrap
+          </li>
+          <div className=" absolute left-1/2 w-[1px] h-[73rem] bg-primary"></div>
+        </ul>
       </section>
     </>
   );
