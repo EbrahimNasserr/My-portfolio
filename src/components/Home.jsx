@@ -37,6 +37,19 @@ const Home = ({ scrollToSection, currentSection, sections }) => {
             user-friendly websites. Driven to deliver engaging user experiences
             and a strong attention to detail in all projects.
           </p>
+          <button className="relative w-fit mt-3">
+            <a
+              href="/src/assets/ebrahim-nasser.pdf"
+              download
+              className=" text-primary button relative md:text-base sm:text-sm w-[180px]"
+            >
+              download cv
+            </a>
+            <div className=" absolute w-5 h-5 -top-[10px] -left-2 bg-bg-cart-color rounded-full"></div>
+            <div className=" absolute w-5 h-5 top-6 -left-2 bg-bg-cart-color rounded-full"></div>
+            <div className=" absolute w-5 h-5 top-6 -right-2 bg-bg-cart-color rounded-full"></div>
+            <div className=" absolute w-5 h-5 -top-[10px] -right-2 bg-bg-cart-color rounded-full"></div>
+          </button>
         </div>
         <div className=" fixed flex items-center justify-between gap-2 flex-col right-1 top-[50%]">
           <ArrowLongUpIcon
