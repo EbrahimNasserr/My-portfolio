@@ -1,6 +1,20 @@
 import React from "react";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
+
+const notify = () =>
+  toast.success("Message Sent Successfully!", {
+    style: {
+      borderRadius: "15px",
+      background: "#111",
+      color: "#fff",
+    },
+    iconTheme: {
+      primary: "#713200",
+      secondary: "#FFFAEE",
+    },
+  });
 
 function Contact({ sections }) {
   const form = useRef();
@@ -65,6 +79,7 @@ function Contact({ sections }) {
                 <button
                   type="submit"
                   className=" text-primary button relative md:text-base sm:text-sm w-[180px]"
+                  onClick={notify}
                 >
                   send message
                   <div className=" absolute w-5 h-5 -top-[10px] -left-2 bg-bg-cart-color rounded-full"></div>
