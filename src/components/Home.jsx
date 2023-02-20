@@ -28,7 +28,7 @@ const Home = ({ scrollToSection, currentSection, sections }) => {
             <div className="mt-3">
               <span className="font-thin text-xl mr-1">hi i'm</span>
               <span className=" text-primary text-3xl md:text-2xl sm:text-xl xsm:text-lg">
-                ebrahim nasser.
+                Ebrahim nasser.
               </span>
             </div>
           </h1>
