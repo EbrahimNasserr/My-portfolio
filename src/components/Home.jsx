@@ -26,7 +26,7 @@ const Home = ({ scrollToSection, currentSection, sections }) => {
           <h1 className="font-semibold text-4xl md:text-3xl sm:text-2xl xsm:text-xl tracking-widest leading-tight mb-3">
             nice having you here !
             <div className="mt-3">
-              <span className="font-thin text-xl mr-1">hi i'm,</span>
+              <span className="font-thin text-xl mr-1">hi i'm</span>
               <span className=" text-primary text-3xl md:text-2xl sm:text-xl xsm:text-lg">
                 ebrahim nasser.
               </span>
