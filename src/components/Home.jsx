@@ -39,11 +39,11 @@ const Home = ({ scrollToSection, currentSection, sections }) => {
           </p>
           <button className="relative w-fit mt-3">
             <a
-              href="/src/assets/ebrahim-nasser.pdf"
-              download
+              href="https://drive.google.com/file/d/1lS7U7fAtIDlek89iXyw82NCYy2ygMdye/view?usp=sharing"
+              target="_blank"
               className=" text-primary button relative md:text-base sm:text-sm w-[180px]"
             >
-              download cv
+              view cv
             </a>
             <div className=" absolute w-5 h-5 -top-[10px] -left-2 bg-bg-cart-color rounded-full"></div>
             <div className=" absolute w-5 h-5 top-6 -left-2 bg-bg-cart-color rounded-full"></div>
